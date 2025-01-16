@@ -1,0 +1,58 @@
+export const RESOURCES = [
+  {
+    name: 'Vite',
+    hue: '281',
+    saturation: '99%',
+    lightness: '60%',
+    textColor: 'light',
+  },
+  {
+    name: 'Yarn',
+    hue: '245',
+    saturation: '28%',
+    lightness: '41.4%',
+    textColor: 'light',
+  },
+  {
+    name: 'VS Code',
+    hue: '206',
+    saturation: '100%',
+    lightness: '41.6%',
+    textColor: 'light',
+  },
+  {
+    name: 'Cmder',
+    hue: '77',
+    saturation: '74.5%',
+    lightness: '41.6%',
+    textColor: 'dark',
+  },
+  {
+    name: 'GitHub Desktop',
+    hue: '261',
+    saturation: '69.1%',
+    lightness: '59.4%',
+    textColor: 'light',
+  },
+  {
+    name: 'Firefox Developer Edition',
+    hue: '214',
+    saturation: '100%',
+    lightness: '43.7%',
+    textColor: 'light',
+  },
+  {
+    name: 'Iconfinder',
+    hue: '0',
+    saturation: '0%',
+    lightness: '100%',
+    textColor: 'dark',
+  },
+  {
+    name: 'Codestitch',
+    hue: '216',
+    saturation: '88.3%',
+    lightness: '40.4%',
+    textColor: 'light',
+  },
+]

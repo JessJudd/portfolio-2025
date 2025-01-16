@@ -1,0 +1,227 @@
+@use './cs-core.scss';
+
+/* mixins */
+@mixin brand-colors($dark, $light) {
+  background: $dark;
+  .brand-name {
+    color: $light;
+  }
+  &:before {
+    background: $dark;
+  }
+}
+
+@mixin brand-colors-hover($dark, $light){
+  &:before {
+    background: $dark;
+  }
+  &:hover .brand-name {
+    color: $light;
+  }
+}
+
+@mixin brand-colors-extend($dark, $light){
+  *,
+  .cs-topper {
+    color: $light;
+  }
+}
+
+.brand-logo,
+.brand-focused {
+  transition-duration: var(--bulma-duration);
+  transition-property: background-color,border-color,color;
+}
+
+.brand-name {
+  @extend .cs-topper;
+  color: var(--bodyTextColor);
+}
+
+.brand-grid {
+  .brand-logo {
+    margin: 0;
+    min-height: clamp(6vh, 7.82vw, 8vh);
+    &:before {
+      background: var(--accent);
+    }
+  }
+}
+
+.brand-column .brand-logo {
+  cursor: pointer;
+}
+
+.brand-logo {
+  align-content: center;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3%;
+  padding: 1rem;
+  position: relative;
+  z-index:1;
+
+  .brand-name {
+    transition: color 0.3s;
+  }
+
+  &:before {
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+.brand-grid .brand-logo,
+.brand-column .brand-logo.is-focused,
+.brand-focused {
+  &.brand-AVP {
+    @include brand-colors(var(--brand-AVP),(var(--brand-AVP-text)));
+  }
+  &.brand-NMAJH {
+    @include brand-colors(var(--brand-NMAJH),(var(--brand-NMAJH-text)));
+  }
+  &.brand-HFC {
+    @include brand-colors(var(--brand-HFC),(var(--brand-HFC-text)));
+  }
+  &.brand-GWSC {
+    @include brand-colors(var(--brand-GWSC),(var(--brand-GWSC-text)));
+  }
+  &.brand-SU2C {
+    @include brand-colors(var(--brand-SU2C),(var(--brand-SU2C-text)));
+  }
+  &.brand-Onemind {
+    @include brand-colors(var(--brand-Onemind),(var(--brand-Onemind-text)));
+  }
+  &.brand-Oki {
+    @include brand-colors(var(--brand-Oki),(var(--brand-Oki-text)));
+  }
+  &.brand-OIA {
+    @include brand-colors(var(--brand-OIA),(var(--brand-OIA-text)));
+  }
+  &.brand-T3 {
+    @include brand-colors(var(--brand-T3),(var(--brand-T3-text)));
+  }
+  &.brand-NDG {
+    @include brand-colors(var(--brand-NDG),(var(--brand-NDG-text)));
+  }
+  &.brand-CMG {
+    @include brand-colors(var(--brand-CMG),(var(--brand-CMG-text)));
+  }
+}
+
+.brand-column {
+  .brand-logo {
+    background:var(--gradient);
+    &.brand-AVP {
+      @include brand-colors-hover(var(--brand-AVP), (var(--brand-AVP-text)));
+    }
+    &.brand-NMAJH {
+      @include brand-colors-hover(var(--brand-NMAJH), (var(--brand-NMAJH-text)));
+    }
+    &.brand-HFC {
+      @include brand-colors-hover(var(--brand-HFC), (var(--brand-HFC-text)));
+    }
+    &.brand-GWSC {
+      @include brand-colors-hover(var(--brand-GWSC), (var(--brand-GWSC-text)));
+    }
+    &.brand-SU2C {
+      @include brand-colors-hover(var(--brand-SU2C), (var(--brand-SU2C-text)));
+    }
+    &.brand-Onemind {
+      @include brand-colors-hover(var(--brand-Onemind), (var(--brand-Onemind-text)));
+    }
+    &.brand-Oki {
+      @include brand-colors-hover(var(--brand-Oki), (var(--brand-Oki-text)));
+    }
+    &.brand-OIA {
+      @include brand-colors-hover(var(--brand-OIA), (var(--brand-OIA-text)));
+    }
+    &.brand-T3 {
+      @include brand-colors-hover(var(--brand-T3), (var(--brand-T3-text)));
+    }
+    &.brand-NDG {
+      @include brand-colors-hover(var(--brand-NDG), (var(--brand-NDG-text)));
+    }
+    &.brand-CMG {
+      @include brand-colors-hover(var(--brand-CMG), (var(--brand-CMG-text)));
+    }
+    + .brand-logo {
+      margin-top: 1rem;
+    }
+  } 
+  .brand-focused + .brand-logo {
+    margin-top: 1rem;
+  }
+}
+
+.container.brand-focused {
+  border-radius: 3px;
+  // margin: 1rem 0;
+  padding: clamp(1.25rem, 7.82vw, 2.5rem);
+  // min-height:100%;
+  // height:100%;
+  .columns {
+    height:100%;
+  }
+  .details-list {
+    font-size: var(--subFontsize);
+    gap: 0 1.5rem;
+  }
+  
+  &.brand-AVP {
+    @include brand-colors-extend(var(--brand-AVP), (var(--brand-AVP-text)));
+  }
+  &.brand-NMAJH {
+    @include brand-colors-extend(var(--brand-NMAJH), (var(--brand-NMAJH-text)));
+  }
+  &.brand-HFC {
+    @include brand-colors-extend(var(--brand-HFC), (var(--brand-HFC-text)));
+  }
+  &.brand-GWSC {
+    @include brand-colors-extend(var(--brand-GWSC), (var(--brand-GWSC-text)));
+  }
+  &.brand-SU2C {
+    @include brand-colors-extend(var(--brand-SU2C), (var(--brand-SU2C-text)));
+  }
+  &.brand-Onemind {
+    @include brand-colors-extend(var(--brand-Onemind), (var(--brand-Onemind-text)));
+  }
+  &.brand-Oki {
+    @include brand-colors-extend(var(--brand-Oki), (var(--brand-Oki-text)));
+  }
+  &.brand-OIA {
+    @include brand-colors-extend(var(--brand-OIA), (var(--brand-OIA-text)));
+  }
+  &.brand-T3 {
+    @include brand-colors-extend(var(--brand-T3), (var(--brand-T3-text)));
+  }
+  &.brand-NDG {
+    @include brand-colors-extend(var(--brand-NDG), (var(--brand-NDG-text)));
+  }
+  &.brand-CMG {
+    @include brand-colors-extend(var(--brand-CMG), (var(--brand-CMG-text)));
+  }
+}
+
+.focused-brand-logo {
+  background-color:#fff;
+  border-radius: 3px;
+  padding:1rem;
+  img {
+    max-width:100%;
+  }
+  max-width:50%;
+}

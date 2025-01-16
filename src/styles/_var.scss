@@ -1,0 +1,85 @@
+@media only screen and (min-width: 0rem) {
+  // Website colors (LIGHT MODE)
+  :root {
+      --bulma-family-primary: "Atkinson Hyperlegible", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+      // --primary: hsl(221, 14%, 53%);
+      // --bulma-primary: var(--primary);
+      // --bulma-primary-h: 221;
+      // --bulma-primary-s: 14%;
+      // --bulma-primary-l: 53%;
+      // --bodyTextColor: #4e4b66;
+      // --bodyTextColorWhite: #fafbfc;
+
+      --primaryLight: #9caebb;
+      --secondary: #251d29;
+      --secondaryLight: #433d4c;
+
+      --primary: hsl(102, 39%, 60%);
+      --bulma-primary: var(--primary);
+      --bulma-primary-h: 102;
+      --bulma-primary-s: 39%;
+      --bulma-primary-l: 60%;
+
+      --primaryLight: hsl(102, 39%, 90%);
+      --secondary: #183107;
+      --secondaryLight: #32b89d;
+
+      --headerColor: #1a1a1a;
+
+      --bodyTextColor: #140509;
+      --bodyTextColorWhite: #faebef;
+      --footerTextColor: #262626;
+
+      --gradient: linear-gradient(120deg,var(--primary),var(--accent));
+
+
+      /* brand colors */
+      --brand-AVP: #ffd61f;
+      --brand-AVP-text: #424242;
+
+      --brand-GWSC: #5f91d8;
+      --brand-GWSC-text: #000;
+
+      --brand-NDG: #312316;
+      --brand-NDG-text: #C5AF8C;
+
+      --brand-Oki: #05737a;
+      --brand-Oki-text: #fff;
+
+      --brand-Onemind: #ffcd05;
+      --brand-Onemind-text: #4D3D00;
+
+      --brand-OIA: #ff6200;
+      --brand-OIA-text:  #000;
+
+      --brand-SU2C: #ff3b29;
+      --brand-SU2C-text: #000;
+
+      --brand-T3: #e6d9d6;
+      --brand-T3-text: #5B3D39;
+
+      --brand-HFC: #cc196d;
+      --brand-HFC-text:  #fff;
+
+      --brand-NMAJH: #d71d33;
+      --brand-NMAJH-text: #fff;
+
+      --brand-CMG: #133e69;
+      --brand-CMG-text: #CFCFCF;
+
+
+      /* 13px - 16px */
+      --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+      /* 31px - 49px */
+      --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+      /* 21px - 41px */
+      --subheaderFontSize: clamp(1.125rem, 3.9vw, 2rem);
+      --bodyFontSize: 1rem;
+      --bodyFontSize: clamp(1rem, 3.9vw, 1.35rem);
+      --subFontsize: clamp(1rem, 3.9vw, 1.125rem);
+
+      /* 60px - 100px top and bottom */
+      --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
+}
