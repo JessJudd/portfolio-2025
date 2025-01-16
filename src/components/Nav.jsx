@@ -81,21 +81,6 @@ export const Nav = () => {
               <li className="cs-li">
                 <NavLink
                   onClick={() => toggleMenu()}
-                  to="/"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? "cs-li-link pending "
-                      : isActive
-                      ? "cs-li-link cs-active"
-                      : "cs-li-link"
-                  }
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="cs-li">
-                <NavLink
-                  onClick={() => toggleMenu()}
                   to="/agency"
                   className={({ isActive, isPending }) =>
                     isPending
