@@ -50,7 +50,11 @@ export const Nav = () => {
   return (
     <header id="cs-navigation" className={mobileMenuIsOpen ? "cs-active" : ""}>
       <div className="cs-container">
-        <Link to="/" className="cs-logo" aria-label="back to home">
+        <Link
+          to="/portfolio-2025"
+          className="cs-logo"
+          aria-label="back to home"
+        >
           <img className="light" src={lightLogo} alt="jessjudd.dev" />
           <img className="dark" src={darkLogo} alt="jessjudd.dev" />
         </Link>

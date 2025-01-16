@@ -42,7 +42,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<PageHome />} />
+          <Route path="/portfolio-2025" element={<PageHome />} />
           <Route
             path="agency"
             element={
