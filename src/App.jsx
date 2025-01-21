@@ -3,8 +3,9 @@ import "./App.scss";
 import { PROJECTS } from "./PROJECTS.js";
 import { RESOURCES } from "./RESOURCES.js";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
+import { ScrollToTop } from "./components/ScrollToTop.jsx";
 import { Layout } from "./components/Layout.jsx";
 
 import { PageHome } from "./pages/PageHome.jsx";
@@ -30,7 +31,7 @@ function App() {
 
     return (
       <span
-        className={`tag is-medium`}
+        className={`${name.length > 14 && "is-col-span-2"} cell tag is-medium`}
         style={{ backgroundColor: background, color: color }}
       >
         {name}
@@ -108,6 +109,7 @@ function App() {
                     agency work.
                   </p>
                   <div className="columns is-desktop mt-5">
+                    <div className="column is-one-third-desktop is-flex is-flex-direction-column">
                       <p className="cs-text">
                         The frameworks, programs and tools I use to develop are:
                       </p>
