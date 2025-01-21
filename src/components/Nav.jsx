@@ -14,7 +14,6 @@ export const Nav = () => {
   ).matches;
 
   function toggleMenu() {
-    console.log("hamburger menu toggled");
     setMobileMenuIsOpen((current) => !current);
     document.body.classList.toggle("cs-open");
   }
@@ -51,7 +50,8 @@ export const Nav = () => {
     <header id="cs-navigation" className={mobileMenuIsOpen ? "cs-active" : ""}>
       <div className="cs-container">
         <Link
-          to="/portfolio-2025"
+          //to="/portfolio-2025"
+          to="/"
           className="cs-logo"
           aria-label="back to home"
         >

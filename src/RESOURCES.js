@@ -35,13 +35,6 @@ export const RESOURCES = [
     textColor: 'light',
   },
   {
-    name: 'Firefox Developer Edition',
-    hue: '214',
-    saturation: '100%',
-    lightness: '43.7%',
-    textColor: 'light',
-  },
-  {
     name: 'Iconfinder',
     hue: '0',
     saturation: '0%',

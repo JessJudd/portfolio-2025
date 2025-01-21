@@ -2,14 +2,7 @@
   // Website colors (LIGHT MODE)
   :root {
       --bulma-family-primary: "Atkinson Hyperlegible", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-      // --primary: hsl(221, 14%, 53%);
-      // --bulma-primary: var(--primary);
-      // --bulma-primary-h: 221;
-      // --bulma-primary-s: 14%;
-      // --bulma-primary-l: 53%;
-      // --bodyTextColor: #4e4b66;
-      // --bodyTextColorWhite: #fafbfc;
+      --is-family-secondary: "Slabo 27px", serif;
 
       --primaryLight: #9caebb;
       --secondary: #251d29;
@@ -36,7 +29,7 @@
 
       /* brand colors */
       --brand-AVP: #ffd61f;
-      --brand-AVP-text: #424242;
+      --brand-AVP-text: var(--dark);
 
       --brand-GWSC: #5f91d8;
       --brand-GWSC-text: #000;
@@ -67,6 +60,9 @@
 
       --brand-CMG: #133e69;
       --brand-CMG-text: #CFCFCF;
+
+      --brand-Schwartz: #d48c70;
+      --brand-Schwartz-text: #03111C;
 
 
       /* 13px - 16px */
