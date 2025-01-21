@@ -1,4 +1,6 @@
 export const FocusedBrand = ({ device, brand }) => {
+  let brandImgUrl = `./portfolio-2025/logos/logo_`;
+
   let focusedBrandDetails =
     brand &&
     brand.details &&
@@ -27,7 +29,7 @@ export const FocusedBrand = ({ device, brand }) => {
             </div>
             <div className="column is-one-fifth p-0 is-flex is-flex-direction-column is-justify-content-space-between">
               <figure className="focused-brand-logo image mx-auto transparent">
-                <img src={`./logos/logo_${brand.cssId}.${brand.imageType}`} />
+                <img src={`${brandImgUrl}${brand.cssId}.${brand.imageType}`} />
               </figure>
               {brand.url && (
                 <a
@@ -100,7 +102,7 @@ export const FocusedBrand = ({ device, brand }) => {
             </div>
             <div className="column is-flex is-flex-direction-column is-justify-content-flex-end">
               <figure className="focused-brand-logo image ml-auto transparent">
-                <img src={`./logos/logo_${brand.cssId}.${brand.imageType}`} />
+                <img src={`${brandImgUrl}${brand.cssId}.${brand.imageType}`} />
               </figure>
             </div>
           </div>
