@@ -42,6 +42,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
+          {/* <Route path="/portfolio-2025" element={<PageHome />} /> */}
           <Route path="/" element={<PageHome />} />
           <Route
             path="agency"
@@ -106,27 +107,32 @@ function App() {
                     the projects I have completed that are not related to my
                     agency work.
                   </p>
-                  <div className="columns is-flex is-align-content-center">
-                    <div className="column is-one-quarter is-flex is-flex-direction-column is-justify-content-center">
+                  <div className="columns is-desktop mt-5">
                       <p className="cs-text">
                         The frameworks, programs and tools I use to develop are:
                       </p>
                     </div>
                     <div className="column">
-                      <div className="section container is-flex is-justify-content-space-evenly">
-                        {resourceList}
+                      <div className="fixed-grid has-3-cols">
+                        {/* <div className="container is-flex is-justify-content-space-around is-flex-wrap-wrap"> */}
+                        <div className="grid">{resourceList}</div>
+                        {/* </div> */}
                       </div>
                     </div>
                   </div>
                 </InnerHero>
-                <section className="section fixed-grid">
-                  <div className="grid has-2-cols">{projectList}</div>
+                <section className="section">
+                  <div className="fixed-grid has-1-cols-mobile has-2-cols-tablet">
+                    <div className="grid">{projectList}</div>
+                  </div>
+                  {/* <div className="columns is-hidden-desktop">{projectList}</div> */}
                 </section>
               </PageInternal>
             }
           />
         </Route>
       </Routes>
+      <ScrollToTop />
     </BrowserRouter>
   );
 }

@@ -9,35 +9,12 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
 
-// /* mixins */
-// @mixin brand-colors($dark, $light) {
-//   background-color: $dark;
-//   &:not(.is-focused) .cs-topper {
-//     color: $light;
-//   }
-//   &:before {
-//     background-color: var(--accent);
-//     background: var(--gradient);
-//   }
-//   &:hover .cs-topper {
-//     color: var(--bodyTextColor);
-//   }
-// }
-
-
 .image img {
   border-radius:5px;
 }
 .image.bw img {
   filter:grayscale(1);
 }
-
-// .container section {
-//   padding-bottom: clamp(3.75rem, 7.82vw, 6.25rem);
-// }
-// .container section + section {
-//   margin-top: clamp(3.75rem, 7.82vw, 6.25rem);
-// }
 
 .cs-text + .cs-topper {
   margin-top: clamp(1.25rem, 7.82vw, 2.5rem);
@@ -54,13 +31,11 @@
   .section {
     --bulma-section-padding-desktop: 3rem 1.5rem;
   }
-  #brands .grid {
-    .cell.brand-logo {
-      padding: 0 5%;
-    }
-  }
 }
 
+.section + .section {
+  padding-top: clamp(1rem, 7.82vw, 2rem);
+}
 .agency-work + .agency-work,
 .agency-work + .brand-grid {
   margin: clamp(1rem, 7.82vw, 2rem) 0;

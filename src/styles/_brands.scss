@@ -120,6 +120,9 @@
   &.brand-CMG {
     @include brand-colors(var(--brand-CMG),(var(--brand-CMG-text)));
   }
+  &.brand-Schwartz {
+    @include brand-colors(var(--brand-Schwartz),(var(--brand-Schwartz-text)));
+  }
 }
 
 .brand-column {
@@ -157,6 +160,9 @@
     }
     &.brand-CMG {
       @include brand-colors-hover(var(--brand-CMG), (var(--brand-CMG-text)));
+    }
+    &.brand-Schwartz {
+      @include brand-colors-hover(var(--brand-Schwartz), (var(--brand-Schwartz-text)));
     }
     + .brand-logo {
       margin-top: 1rem;
@@ -214,14 +220,21 @@
   &.brand-CMG {
     @include brand-colors-extend(var(--brand-CMG), (var(--brand-CMG-text)));
   }
+  &.brand-Schwartz {
+    @include brand-colors-extend(var(--brand-Schwartz), (var(--brand-Schwartz-text)));
+  }
 }
 
 .focused-brand-logo {
   background-color:#fff;
   border-radius: 3px;
-  padding:1rem;
+  padding:.25rem;
   img {
-    max-width:100%;
+    max-width: 100%;
+    max-height: 150px;
   }
-  max-width:50%;
+  @media screen and (max-width:768px){
+    max-width:50%;
+    padding:1rem;
+  }
 }

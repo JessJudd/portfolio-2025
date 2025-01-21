@@ -98,9 +98,10 @@ export const BRANDS = [
     focused: true,
     project: 'Outdoor Advocacy Report',
     platform: 'WordPress',
-    description:['In addition to maintaining the overall WordPress site for the Outdoor Association Industry, at Digital Operative, myself and one other WordPress developer launched an interactive tool for visitors to review the official US Bureau of Economic Analysis report on outdoor recreation economy and advocacy.','The interactive map allows users to easily access the information from the report on the website, in addition to easily accessing the official report documents. The tool is updated annually to reflect the new information from the previous economic year and is still maintained today.'],
+    description:['In addition to maintaining the overall WordPress site for the Outdoor Association Industry, at Digital Operative, myself and one other WordPress developer helped launched an interactive tool for visitors to review the official US Bureau of Economic Analysis report on outdoor recreation economy and advocacy.','The interactive map allows users to easily access the information from the report on the website, in addition to easily accessing the official report documents. The tool is updated annually to reflect the new information from the previous economic year and is still maintained today.'],
     url: 'https://outdoorindustry.org/advocacy',
     details: ['WordPress', 'Advanced Custom Fields', 'SCSS', 'JavaScript/jQuery'],
+    imageType: 'jpg',
   },
   {
     id: 9,
@@ -113,6 +114,7 @@ export const BRANDS = [
     description:["One approach in Digital Operative's conversion rate optimization strategy for T3Micro included email marketing campaigns to supplement their sales and new product launches on the main Shopify website. In addition to supporting various updates to the Shopify site, such as improving their navigation and creating new product pages, I was also the lead developer of their email marketing campaigns.","Using Foundation for Email to generate the tabled layouts, I worked with the T3 account manager and strategist to create inbox-friendly HTML emails that were rigorously tested in Litmus. More information about DO's CRO strategy can be reviewed on their case study."],
     url:['https://www.digitaloperative.com/case-study/t3-micro/'],
     details:['Shopify','JavaScript','Mailchimp', 'HTML', 'SCSS/CSS', 'Foundation for Email', 'Litmus'],
+    imageType: 'jpg',
   },
   {
     id: 10,
@@ -124,6 +126,7 @@ export const BRANDS = [
     platform: 'Mailchimp',
     description:['Nescafé Dolce Gusto was another email marketing campaign that I ran while working at Digital Operative. Nescafé focused on sending deal newsletters for every relevant holiday, from Valentines Day to New Years and every holiday in between. These campaigns were also created using Foundation for Email and designed in house at Digital Operative.'],
     details:['Mailchimp', 'HTML', 'CSS', 'Foundation for Email', 'Litmus'],
+    imageType: 'jpg',
   },
   {
     id: 10,
@@ -136,17 +139,19 @@ export const BRANDS = [
     description:['Ceatus is a digital marketing company for medical professionals, and I was a senior developer of their in-house dev team, coding custom WordPress themes designed by our internal designer. Before Gutenberg was released in WordPress 5.0, medical professionals, especially in need of photo galleries to demonstrate the quality of their work, were limited to do-it-yourself solutions or fully custom and equivalently priced WordPress themes. Ceatus desired to launch a low-tier, entry level package to offer to their smaller practice clients, such as dental, vision and specific cosmetic procedures.','Working around the capabilities of Advanced Custom Fields and with our in-house designer, Ceatus designed and launched a template that included various layouts, color palettes, fonts and styles, that were easily editable by the practice staff, or intenally if desired. This entry level tier of service for Ceatus was very popular with the intended audience and is still in use today, nearly 10 years later.'],
     url: 'https://www.ceatus.com/',
     details: ['WordPress', 'Advanced Custom Fields', 'SCSS'],
+    imageType: 'jpg',
   },
   {
     id: 10,
     agencyName: 'Ceatus Media Group',
     brandName: 'Schwartz Laser',
-    cssId: 'CMG',
+    cssId: 'Schwartz',
     focused: false,
     project: 'Starter Client WordPress Template',
     platform: 'WordPress',
     description:['This is a currently live example of the entry level template for Ceatus Media Group. I left Ceatus in 2017 for Digital Operative, so this theme been updated and modernized to reflect new design standards, however, the structure, foundation and organization of the bespoke capabilities are still intact and an integral part of this template that is still used today by Ceatus.'],
     url: 'https://www.schwartzlaser.com/',
     details: ['WordPress', 'Advanced Custom Fields', 'SCSS'],
+    imageType: 'png',
   },
 ]

@@ -70,7 +70,7 @@ body {
 }
 
 .cs-cta {
-  font-family: "Slabo 27px", serif;
+  font-family: var(--is-family-secondary);
   font-size: var(--subheaderFontSize);
   font-style: italic;
   font-weight: 900;
