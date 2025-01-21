@@ -50,8 +50,8 @@ export const Nav = () => {
     <header id="cs-navigation" className={mobileMenuIsOpen ? "cs-active" : ""}>
       <div className="cs-container">
         <Link
-          //to="/portfolio-2025"
-          to="/"
+          to="/portfolio-2025"
+          //to="/"
           className="cs-logo"
           aria-label="back to home"
         >
